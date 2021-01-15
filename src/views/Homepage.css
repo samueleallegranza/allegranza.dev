@@ -1,0 +1,55 @@
+.Hero { 
+    height: 900px;
+    background: linear-gradient(to right, #161a24 0%, #161a24 0%, #282e39 100%);
+    position: relative; /*Every position absolute contained refers to this*/
+}
+
+.HeroGroup{
+    margin: 0;
+    max-width: 1000px;
+    padding: 300px 300px;
+    text-align: left;
+    color: #c9c9c9;
+}
+
+.Hero h1 {
+    font-size: 80px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.Hero p {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 20px;
+    font-weight: 300;
+    margin: 0 0 70px 0;
+}
+
+.Hero a {
+    font-size: 25px;
+    font-weight: 700;
+    padding: 10px 35px;
+    background: linear-gradient(to right, #df1227 0%, #fb6d1b 100%);
+    border-radius: 15px;
+    border: 0 solid transparent;
+}
+
+@media (max-width: 640px) {
+    .HeroGroup {
+        padding: 50px 50px;
+    }
+}
+
+/* @media (max-width: 640px) {
+    .HeroGroup {
+        padding: 300px 50px;
+    }
+}
+*/
+
+
+/* .Hero .BtnGlow {
+    background: linear-gradient(#df1227 0%, #fb6d1b 100%);
+    width: 100px;
+    height: 100px;
+} */
