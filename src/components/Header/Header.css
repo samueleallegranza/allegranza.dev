@@ -2,40 +2,42 @@
     position: fixed;
     z-index: 100;
     width: 100%;
-    padding: 10px 0;
+    padding: 0 0;
 }
 
 .HeaderGroup {
+    position: relative;
+    
     max-width: 1500px;
     margin: 0 auto;
-
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-content: flex-start;
-    align-items: center;    /* Align vertically */
-
+    
+    padding: 50px 25px 0 25px;
 }
 
-.Header a {
-    cursor: pointer;
-    flex-grow: 1;
-    text-align: center;
-    padding: 20px 0;
+.Header .logo {
+    float: left;
+    display: block;
+}
+
+.Header .links {
+    float: right;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;  /* Align horizzontally */
+    padding-top: 18px;
 
     text-transform: uppercase;
-    font-size: 23px;
     font-weight: 600;
-    
-    /* transition: 1s cubic-bezier(0.2, 0.8, 0.2, 1); */
+    font-size: 23px;
 }
 
-.Header a:nth-child(1) {
-    flex-grow: 9;
-    text-align: left;
+.Header .links a {
+    padding: 0 25px;
+    cursor: pointer;
 }
 
-.Header a:after {
+.Header .links a:after {
     background: none repeat scroll 0 0 transparent;
     bottom: -6px;
     content: "";
@@ -51,14 +53,6 @@
     width: 0;
 }
 
-.Header a:hover:after {
-    width: 70%;
-}
-
-.Header svg {
-    height: 80px;
-    width: 80px;
-    background: transparent;
-    padding: 0 20px;
-    margin: 0;
+.Header .links a:hover:after {
+    width: 100%;
 }
