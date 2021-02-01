@@ -12,7 +12,8 @@ body {
 }
 
 html {
-    background: rgba(128, 60, 60, 1);
+    /* background: rgba(128, 60, 60, 1); */
+    background: white;
     padding: 0;
     margin: 0;
 }
