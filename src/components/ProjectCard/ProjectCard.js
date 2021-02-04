@@ -1,13 +1,13 @@
 import React from 'react';
-// import './Homepage.css';
+import './ProjectCard.css';
 
 const ProjectCard = () => {
     return (
         <div className="Card">
-            <h1>allegranza.dev</h1>
-            <p>
-                The official repository of this portfolio
-            </p>
+            <div className="Title">
+                <h1>energy-metrics</h1>
+            </div>
+            <p>A cloud service for home's energy I/O monitoring. </p>
         </div>
     );
 }

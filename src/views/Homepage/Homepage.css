@@ -60,6 +60,20 @@
     fill: #FFFFFF;
 }
 
-.Projects h2 {
+
+.Projects {
     text-align: center;
+}
+
+/* Projects  */
+.Projects h2 {
+    font-size: 45px;
+    display: inline-block;
+    background: linear-gradient(to right, #e32235 0%, #ec7e10 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.ProjectsGroup {
+    
 }

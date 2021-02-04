@@ -1,6 +1,7 @@
 import React from 'react';
-import ProjectCard from '../../components/ProjectCard/ProjectCard';
 import './Homepage.css';
+
+import ProjectCard from '../../components/ProjectCard/ProjectCard';
 
 const GlowyBtn = (props) => {
     return(
@@ -28,7 +29,6 @@ const Homepage = () => {
                 <div className="HeroGroup">
                     <h1>Samuele Allegranza</h1>
                     <p>SW developer // Perpetual learner</p>
-                    {/* <a href="https://google.it/">About me</a> */}
                     <GlowyBtn href="https://google.it/" text="About me" />
                 </div>
                 <HeaderDivider/>
@@ -36,6 +36,12 @@ const Homepage = () => {
 
             <div className="Projects">
                 <h2>My latest projects</h2>
+                <div className="ProjectsGroup">
+                    <ProjectCard 
+                        
+                    />
+                </div>
+                <GlowyBtn href="https://google.it/" text="Explore" />
            </div>
         </div>
     );
