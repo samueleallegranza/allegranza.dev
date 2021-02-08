@@ -2,15 +2,8 @@ import React from 'react';
 import './Homepage.css';
 
 import ProjectCard from '../../components/ProjectCard/ProjectCard';
-
-const GlowyBtn = (props) => {
-    return(
-        <div>
-            <div className="BtnGlow"></div>
-            <a href={props.href}>{props.text}</a>
-        </div>
-    );
-};
+import GlowyBtn from '../../components/GlowyBtn/GlowyBtn';
+import ArticleCard from '../../components/ArticleCard/ArticleCard';
 
 const HeaderDivider = () => {
     return (
@@ -34,15 +27,29 @@ const Homepage = () => {
                 <HeaderDivider/>
             </div>
 
-            <div className="Projects">
+            <div className={`${"Projects"} ${"HomeSection"}`}>
                 <h2>My latest projects</h2>
                 <div className="ProjectsGroup">
-                    <ProjectCard 
-                        
-                    />
+                    <ProjectCard title="energy-metrics" desc="A cloud service for home's energy I/O monitoring."/>
+                    <ProjectCard title="esp32-leds"     desc="Control your led strips wirelessly connected to your local Wi-Fi with a Webapp"/>
+                    <ProjectCard title="bike-guard"     desc="Control your led strips wirelessly connected to your local Wi-Fi with a Webapp"/>
+                    <ProjectCard title="U-modbus"       desc="A python library that helps people connecting modbus devices to a RaspberryPi"/>
                 </div>
                 <GlowyBtn href="https://google.it/" text="Explore" />
            </div>
+
+            <div className={`${"Articles"} ${"HomeSection"}`}>
+                <h2>Recent writings</h2>
+                <div className="ArticlesGroup">
+                    <ArticleCard
+                        title="ESP32 Programming - How to start with Espressif IDF"
+                        desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                        tags={["Hardware", "IOT","Programming"]}
+                        img="esp32.jpeg"
+                    />
+                </div>
+                <GlowyBtn href="https://google.it/" text="Read More" />
+            </div>
         </div>
     );
 };

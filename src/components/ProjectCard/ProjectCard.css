@@ -12,24 +12,41 @@
         0 22.3px 17.9px rgba(0, 0, 0, 0.072),
         0 41.8px 33.4px rgba(0, 0, 0, 0.086),
         0 100px 80px rgba(0, 0, 0, 0.12);
-
-    display: grid;
+    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
 }
 
-.Card h1{
-    border-bottom: 5px solid ;
-    
-    /* background: none repeat scroll 0 0 transparent;
-    bottom: -6px;
+.Card h1 {
+    font-size: 30px;
+    color: #596171;
+
+    padding: 0 25px;
+    /* cursor: pointer; */
+    width: fit-content;    
+}
+
+.Card h1:after {
+    bottom: -4px;
     content: "";
     display: block;
-    height: 5px;
+    height: 3px;
     border-style: solid;
     border-radius: 40px;
     border-width: 0;
     position: relative;
-    background: linear-gradient(to right, #df1227 0%, #fb6d1b 100%);
+    background: linear-gradient(to right, #e52c52 0%, #e88d15 100%);
     margin: 0 auto;
-    width: 100%; */
+    width: 100%;
+}
 
+.Card p {
+    width: 80%;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #656565;
 }

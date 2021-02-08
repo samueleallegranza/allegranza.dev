@@ -25,15 +25,6 @@
     margin: 0 0 70px 0;
 }
 
-.Hero a {
-    font-size: 25px;
-    font-weight: 700;
-    padding: 10px 35px;
-    background: linear-gradient(to right, #df1227 0%, #fb6d1b 100%);
-    border-radius: 15px;
-    border: 0 solid transparent;
-}
-
 @media (max-width: 640px) {
     .HeroGroup {
         padding: 50px 50px;
@@ -61,19 +52,43 @@
 }
 
 
-.Projects {
-    text-align: center;
+/* Homepage sections styling */
+.HomeSection {
+    margin-top: 10px;
 }
-
-/* Projects  */
-.Projects h2 {
+.HomeSection h2 {
     font-size: 45px;
     display: inline-block;
     background: linear-gradient(to right, #e32235 0%, #ec7e10 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+.HomeSection .GlowyBtn {
+    margin-top: 60px;
+}
 
+
+/* Projects  */
+.Projects {
+    text-align: center;
+}
 .ProjectsGroup {
+    margin: 0 auto;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+    justify-items: center;
+}
+
+
+/* Articles  */
+.Articles {
+    margin-top: 200px;
+    text-align: center;
+}
+.ArticlesGroup {
+    margin: 0 auto;
+    width: fit-content;
     
 }

@@ -1,13 +1,11 @@
 import React from 'react';
 import './ProjectCard.css';
 
-const ProjectCard = () => {
+const ProjectCard = (props) => {
     return (
         <div className="Card">
-            <div className="Title">
-                <h1>energy-metrics</h1>
-            </div>
-            <p>A cloud service for home's energy I/O monitoring. </p>
+            <h1>{props.title}</h1>
+            <p>{props.desc}</p>
         </div>
     );
 }
