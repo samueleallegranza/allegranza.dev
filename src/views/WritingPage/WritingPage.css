@@ -1,0 +1,228 @@
+.WritingHero {
+    margin: 0;
+    padding: 0;
+    position: relative;
+
+    width: 100%;
+    height: 900px;
+}
+
+.WritingHero .imgContainer {
+    position: absolute;
+    z-index: -1;
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.WritingHero .imgContainer img {
+    flex-shrink: 0;
+    height: 100%;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.WritingHero .imgCover {
+    position: absolute;
+    z-index: 1;
+
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgb(0, 0, 0) 0%, rgba(0, 0, 0,0.8) 24%, rgba(72, 80, 92, 0.1) 100%);
+    backdrop-filter: blur(2px);
+    --webkit-backdrop-filter: blur(2px);
+}
+
+.WritingHero .titleContainer {
+    position: absolute;
+    z-index: 2;
+
+    margin: 0 300px;
+    height: 100%;
+    
+    display: flex;
+    align-items: center; 
+}
+
+.WritingHero .titleContainer h1 {
+    font-weight: 700;
+    font-size: 90px;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0px 3px 47px #000;
+}
+
+@media (max-width: 640px) {
+    .WritingHero {
+        height: 400px;
+    }
+    .WritingHero .titleContainer {
+        margin: 0 30px;
+    }
+    .WritingHero .titleContainer h1{
+        font-size: 30px;
+    }
+}
+
+
+.WritingIntro {
+    margin: 120px auto;
+    max-width: 850px;
+    text-align: center;
+
+    font-family: Merriweather;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 30px;
+    text-align: center;
+    color: #919191;
+
+}
+
+@media (max-width: 640px) {
+    .WritingIntro {
+        margin: 60px 10px;
+        font-size: 23px;
+    }
+}
+
+
+.WritingAuthor {
+    margin: 120px auto;
+    max-width: 1000px;
+    padding: 0 20px;
+
+    display: grid;
+    grid-template-columns: 100px 5% auto auto;
+    grid-template-rows: 50px 50px;
+    grid-template-areas: 
+        "photo . name socials"
+        "photo . info .";
+    align-items: center;
+
+    color: rgb(109, 104, 104);
+}
+
+.WritingAuthor .photo {
+    grid-area: photo;
+}
+.WritingAuthor .photo img {
+    height: 100%;
+    width: 100%;
+}
+.WritingAuthor .name {
+    grid-area: name;
+    font-size: 25px;
+    font-weight: 700;
+}
+.WritingAuthor .info {
+    grid-area: info;
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+.WritingAuthor .info .readtime, 
+.WritingAuthor .info .date {
+    margin-left: 10px;
+}
+.WritingAuthor .info .divider {
+    width: 2px;
+    height: 100%;
+    background: rgb(109, 104, 104);
+    margin: 0 20px 0 20px
+}
+.WritingAuthor .info .info-icon {}
+.WritingAuthor .socials {
+    grid-area: socials;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 32px;
+}
+.WritingAuthor .social {
+    padding: 0 6px;
+    color: rgb(109, 104, 104);
+}
+
+
+@media (max-width: 640px) {
+    .WritingAuthor {
+        margin: 60px auto;
+        padding: 0 10px;
+        grid-template-columns: 60px 3% auto auto;
+        grid-template-rows: 30px 30px;
+        grid-template-areas: 
+            "photo . name socials"
+            "photo . info info";
+    }
+    .WritingAuthor .name {
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .WritingAuthor .social {
+        font-size: 25px;
+    }
+    .WritingAuthor .info {
+        font-size: 10px;
+        font-weight: 600;
+    }
+    .WritingAuthor .social {
+        font-size: 20px;
+    }
+    .WritingAuthor .info .info-icon {
+        font-size: 18px;
+    }
+    .WritingAuthor .info .readtime, 
+    .WritingAuthor .info .date {
+        margin-left: 5px;
+    }
+    .WritingAuthor .info .divider {
+        margin: 0 10px 0 10px;
+        width: 1px;
+    }
+}
+
+.WritingContent {
+    margin: 120px auto;
+    max-width: 850px;
+    font-family: Merriweather;
+}
+
+.WritingContent h1 {
+    font-weight: bold;
+    font-size: 35px;
+    text-align: left;
+    color: #1d1d1d;
+}
+
+.WritingContent p {
+    font-weight: 300;
+    font-size: 21px;
+    word-spacing: 4px;
+    line-height: 35px;
+    text-align: left;
+    color: #1d1d1d;
+}
+
+.WritingContent img {
+    width: 100%;
+}
+
+@media (max-width: 640px) {
+    .WritingContent {
+        margin: 60px 30px
+    }
+    .WritingContent h1 {
+        font-size: 25px;
+    }
+    .WritingContent p {
+        font-size: 16px;
+        line-height: 28px;
+    }
+}
+

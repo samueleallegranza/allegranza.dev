@@ -1,0 +1,22 @@
+.Footer {
+    height: 450px;
+    background: linear-gradient(to right, #161a24 0%, #161a24 0%, #282e39 100%);
+    text-align: center;
+}
+
+.Footer svg {
+    margin-top: 50px;
+}
+
+.Footer h1 {
+    font-weight: 700;
+    font-size: 41px;
+    color: #c9c9c9;
+}
+
+.Footer .copy{
+    margin-top: 100px;
+    font-size: 17px;
+    color: #c9c9c9;
+    font-family: 'Source Code Pro', monospace;
+}

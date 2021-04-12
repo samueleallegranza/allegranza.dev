@@ -26,14 +26,40 @@
 }
 
 @media (max-width: 640px) {
+    .Hero {
+        height: 550px; 
+    }
     .HeroGroup {
-        padding: 50px 50px;
+        padding: 150px 0px 0px 30px;
+    }
+    .Hero h1 {
+        font-size: 50px;
+    }
+    .Hero p {
+        font-size: 14px;
+        margin: 0 0 40px 0;
     }
 }
+/* @media (max-width: 640px) {
+    .Hero {
+        height: 700px; 
+    }
+    .HeroGroup {
+        padding: 200px 0px 0px 30px;
+    }
+    .Hero h1 {
+        font-size: 55px;
+    }
+    .Hero p {
+        font-size: 14px;
+        margin: 20px 0 40px 0;
+    }
+} */
+
 
 
 /* Header divider */
-.custom-shape-divider-bottom-1612169418 {
+.Hero .divider {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -41,14 +67,20 @@
     overflow: hidden;
     line-height: 0;
 }
-.custom-shape-divider-bottom-1612169418 svg {
+.Hero .divider svg {
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
     height: 157px;
 }
-.custom-shape-divider-bottom-1612169418 .shape-fill {
+.Hero .divider .shape-fill {
     fill: #FFFFFF;
+}
+
+@media (max-width: 640px) {
+    .Hero .divider svg {
+        height: 90px;
+    }
 }
 
 
@@ -67,6 +99,12 @@
     margin-top: 60px;
 }
 
+@media (max-width: 640px) {
+    .HomeSection h2 {
+        font-size: 30px;
+    }
+}
+
 
 /* Projects  */
 .Projects {
@@ -81,14 +119,30 @@
     justify-items: center;
 }
 
+@media (max-width: 640px) {
+    .ProjectsGroup {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 40px;
+    }
+}
+
 
 /* Articles  */
 .Articles {
-    margin-top: 200px;
+    margin-top: 150px;
+    margin-bottom: 270px;
     text-align: center;
 }
 .ArticlesGroup {
     margin: 0 auto;
     width: fit-content;
-    
+    display: grid;
+    row-gap: 50px;
+}
+
+@media (max-width: 640px) {
+    .Articles {
+        margin-top: 100px;
+        margin-bottom: 150px;
+    }
 }
